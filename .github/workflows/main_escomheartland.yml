@@ -59,4 +59,4 @@ jobs:
           app-name: 'ESCOMHEARTLAND'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A76B09A577384C1B921109AD5B6A232C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1860D34239E5463BA8BA5F9BB5C6DD99 }}
