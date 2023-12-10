@@ -1,0 +1,11 @@
+{
+  "name": "escomheartland",
+  "version": "1.0.0",
+  "description": "Trabajo terminal para la Escuela Superior de Computo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JohanCampos",
+  "license": "ISC"
+}
