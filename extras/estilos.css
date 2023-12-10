@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rationale&display=swap');
+
+:root {
+    --escom-color: #005580;
+    --resaltado-color: #FF9300;
+}
+
+.texto-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto-rationale {
+    font-family: 'Rationale', sans-serif;
+}
+
+.titulo-section {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 11.6px;
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    margin: 0;
+    background-color: var(--escom-color);
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav i::before{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+section {
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+#logotipo-navbar {
+    width: 250px;
+    height: auto;
+}
+
+.items-navbar {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-navbar>li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.25s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.items-navbar>li a:hover {
+    background-color: var(--resaltado-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#content {
+    padding: 1rem 6rem;
+}
+
+/************* presentacion ********************/
+
+#presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.imagen-inicio {
+    width: 750px;
+    height: auto;
+}
+
+.texto-presentacion {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/********** mapa ************/
+/* .contenedor-mapa{
+    margin-top: 3rem;
+    position: static !important;
+} */
+/* .contenedor-mapa > *{
+    position: static !important;
+} */
+
+#unity-container {
+    /* width: 70% !important;
+    height: 30% !important; */
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+#unity-container.unity-desktop {
+    left: 0;
+    top: 0;
+    transform: none;
+    position: relative;
+}
+
+#unity-loading-bar {
+    z-index: 10;
+    position: absolute;
+    left: 45%;
+    top: 120%;
+    transform: translate(0, 0);
+}
+
+#unity-canvas {
+    width: 80% !important;
+    height: 80% !important;
+}
+
+#unity-footer{
+    display: flex;
+    gap: 2rem;
+}
+
+/* .back-gris{
+    background-color: gray;
+    width: 100%;
+    height: 300px;
+} */
+
+/***** mas info ***/
+
+#mas-info ul {
+    list-style: georgian;
+}
+
+#mas-info{
+
+}
+
+
+
+/******* footer ***********/
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--escom-color);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 18px;
+}
+
+
+/**** responsive ****/
+
+@media screen and (width < 1000px) {
+    #content {
+        padding: 0rem 2rem;
+    }
+
+    .imagen-inicio {
+        width: 95%;
+        height: auto;
+    }
+
+    #unity-canvas {
+        width: 95% !important;
+        height: 95% !important;
+    }
+
+    #unity-footer{
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (width < 728px) {
+    .items-navbar{
+        display: none;
+    }
+    #logotipo-navbar{
+        width: 120px;
+        height: auto;
+    }
+
+    nav i::before{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
