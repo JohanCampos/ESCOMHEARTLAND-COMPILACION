@@ -1,11 +1,27 @@
 {
   "name": "escomheartland",
   "version": "1.0.0",
-  "description": "Trabajo terminal para la Escuela Superior de Computo",
-  "main": "index.html",
+  "description": "Proyecto para trabajo terminal de la Escuela Superior de Computo",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "JohanCampos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohanCampos/ESCOMHEARTLAND-COMPILACION.git"
+  },
+  "keywords": [
+    "WebGL"
+  ],
+  "bugs": {
+    "url": "https://github.com/JohanCampos/ESCOMHEARTLAND-COMPILACION/issues"
+  },
+  "homepage": "https://github.com/JohanCampos/ESCOMHEARTLAND-COMPILACION#readme"
 }
