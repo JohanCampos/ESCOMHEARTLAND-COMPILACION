@@ -215,7 +215,36 @@ footer {
 
 @media screen and (width < 728px) {
     .items-navbar{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 250px;
+        background-color: var(--escom-color);
+        color: white;
+        gap: 1.5rem 0;
+        justify-content: flex-start;
+        padding: 3rem 0;
+        margin: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s;
+    }
+
+    .items-navbar .close-menu{
+        display: block;
+        align-self:flex-end;
+        padding: 0rem 4rem;
+    }
+
+    .items-navbar>li a:hover {
+        color: var(--resaltado-color);
+        background-color: initial;
+        border-radius: 0;
+        cursor: pointer;
     }
     #logotipo-navbar{
         width: 120px;
@@ -231,4 +260,12 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+
+/***** responsive menu *********/
+
+.menu-opened{
+    opacity: 1;
+    pointer-events: all;
 }

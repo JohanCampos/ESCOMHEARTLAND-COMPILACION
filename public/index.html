@@ -1,126 +1,127 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ESCOM HEARTLAND</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+<html lang="es">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ESCOM HEARTLAND</title>
     <meta name="description"
-    content="ESCOM-HEARTLAND es un proyecto desarrollado en 2023, con el fin de ayudar a la comunidad de ESCOM y sus visitantes">
+        content="ESCOM-HEARTLAND es un proyecto desarrollado en 2023, con el fin de ayudar a la comunidad de ESCOM y sus visitantes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/ico" href="/extras/assets/heartland-icono.ico" />
+    <link rel="stylesheet" href="/extras/estilos.css">
+
     <!-- <script src="https://kit.fontawesome.com/32ab46b9e5.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ESCOMHEARTLAND-V2</div>
-      </div>
+</head>
+
+<body>
+    <nav>
+        <img src="/extras/assets/logotipo-heartland.png" id="logotipo-navbar" alt="">
+        <ul class="items-navbar texto-raleway">
+            <li class=" close-menu"> <i class="fas fa-times"></i></li>
+            <li><a href="#presentacion" class="item-menu">Introducción</a></li>
+            <li><a href="#mapa-interactivo" class="item-menu">Mapa interactivo</a></li>
+            <li><a href="#mas-info" class="item-menu">Más información</a></li>
+        </ul>
+        <i class="fas fa-bars open-menu"></i>
+
+
+    </nav>
+    <div id="content" class="texto-raleway">
+        <section id="presentacion">
+            <h1 class="texto-rationale titulo-section">Bienvenido a la Escuela Superior de Cómputo: Explora Nuestro Recorrido Virtual</h1>
+            <hr>
+            <p class="texto-presentacion">Te damos la más cordial bienvenida a la experiencia única de descubrir la Escuela Superior de Cómputo (ESCOM) a través de nuestro recorrido virtual. Adéntrate en el corazón de la innovación, la tecnología y el aprendizaje.
+                <br>
+                <br>
+                Nuestro recorrido virtual te invita a sumergirte en el ambiente vibrante y dinámico que caracteriza a ESCOM. Explora nuestras áreas comunes, espacios de estudio y zonas de recreación que crean un entorno propicio para el desarrollo integral de cada estudiante.
+                <br>
+                <br>
+                Prepárate para sumergirte en el futuro de la educación en tecnología. ¡Bienvenido a la Escuela Superior de Cómputo, donde el conocimiento se fusiona con la innovación!
+            </p>
+        </section>
+        <section id="mapa-interactivo">
+            <h1 class="texto-rationale titulo-section">Mapa interactivo</h1>
+            <hr>
+            <div class="back-gris contenedor-mapa" id="mapa-container">
+                <iframe src="/WebGL2/index.html" width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="mas-info">
+            <h1 class="texto-rationale titulo-section">Más información</h1>
+            <hr>
+            <div class="">
+                <p>
+                    Bienvenido al espacio dedicado a brindarte información adicional sobre la Escuela Superior de Cómputo (ESCOM) y enriquecer tu experiencia en nuestro recorrido virtual. 
+                    Aquí encontrarás detalles fascinantes que destacan la esencia y el compromiso de ESCOM con la excelencia académica, la investigación y la comunidad.
+                </p>
+                <h1>Nuestra Misión</h1>
+                <p>
+                    En ESCOM, nuestra misión es organizar, administrar e impulsar medidas para prevenir y garantizar servicios académicos de calidad que tengan impacto en la vida académica y docente.
+                    Descubre cómo nuestras metas educativas se alinean con las demandas cambiantes de la industria tecnológica y cómo estamos transformando la forma en que se enseña y se aprende en el ámbito de la informática.
+                </p>
+                <h1>Instalaciones de Última Generación</h1>
+                <p>
+                    Explora más allá de las aulas y sumérgete en nuestras instalaciones de última generación. 
+                    Desde laboratorios equipados con tecnología de punta hasta espacios de colaboración diseñados para 
+                    fomentar el trabajo en equipo y la creatividad, te invitamos a conocer los entornos que hacen de ESCOM un lugar único para el aprendizaje.
+                </p>
+                <h1>Programas Académicos Innovadores</h1>
+                <p>
+                    Obtén información detallada sobre nuestros programas académicos, desde ingeniería en sistemas computacionales hasta ciencia de datos. 
+                    Descubre cómo nuestras currículas están diseñadas para proporcionar una base sólida y relevante, preparando a nuestros estudiantes para los desafíos del mundo digital en constante evolución dando clic 
+                    <a href="https://www.escom.ipn.mx/" style="color: #FF9300">Aquí</a>.
+                </p>
+                <h1>Comunidad ESCOM</h1>
+                <p>
+                    La comunidad de ESCOM es más que un grupo de individuos; 
+                    es una red de mentes apasionadas por la tecnología. Descubre cómo fomentamos la colaboración, la diversidad y el espíritu emprendedor entre nuestros estudiantes, profesores y exalumnos.
+                </p>
+                <h1>¡Únete a Nosotros!</h1>
+                <p>
+                    Te invitamos a ser parte de la experiencia ESCOM. Descubre cómo puedes aplicar, visitar nuestras instalaciones y sumergirte aún más en el mundo de la informática con nosotros.
+                </p>
+            </div>
+
+        </section>
+
+
     </div>
+    <footer class="texto-rationale">
+        <p>ESCOM HEARTLAND</p>
+        <p>Trabajo Terminal 2023-B056</p>
+        <p>Escuela Superior de Computo - IPN</p>
+    </footer>
+    <script src="/extras/menu.js"></script>
+    <script src="/extras/menu.js"></script>
     <script>
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-      var warningBanner = document.querySelector("#unity-warning");
+        // Detectar el tipo de dispositivo
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        var isiPhone = /iPhone/i.test(navigator.userAgent);
 
-      // Shows a temporary message banner/ribbon for a few seconds, or
-      // a permanent error message on top of the canvas if type=='error'.
-      // If type=='warning', a yellow highlight color is used.
-      // Modify or remove this function to customize the visually presented
-      // way that non-critical warnings and error messages are presented to the
-      // user.
-      function unityShowBanner(msg, type) {
-        function updateBannerVisibility() {
-          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        // Obtener el contenedor del mapa
+        var mapaContainer = document.getElementById("mapa-container");
+
+        // Verificar si es un dispositivo móvil
+        if (isMobile) {
+            // Verificar si es un iPhone
+            if (isiPhone) {
+                // Cambiar el contenido para iPhones
+                mapaContainer.innerHTML = "<p>Al parecer estás visualizando la página desde un dispositivo iPhone, por el momento no hay soporte para esta plataforma.</p>";
+            } else {
+                // Cambiar el contenido para dispositivos móviles (no iPhone)
+                mapaContainer.innerHTML = "<p>Al parecer acaba de acceder desde un dispositivo móvil. Haz clic <a href='/WebGL2/index.html' style='color: #FF9300'>Aquí</a> para una mejor visualización del mapa.</p>"+
+                                            "<p>Advertencia: WebGL no está optimizado para dispositivos móviles, recomendamos que visualize el recorrido en un navegador web de escritorio para mejor rendimiento.</p>";
+            }
         }
-        var div = document.createElement('div');
-        div.innerHTML = msg;
-        warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
-        else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
-            warningBanner.removeChild(div);
-            updateBannerVisibility();
-          }, 5000);
-        }
-        updateBannerVisibility();
-      }
-
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/html.loader.js";
-      var config = {
-        dataUrl: "https://media.githubusercontent.com/media/JohanCampos/ESCOMHEARTLAND-COMPILACION/main/public/Build/html.data",
-        frameworkUrl: buildUrl + "/html.framework.js",
-        codeUrl: buildUrl + "/html.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "ESCOMHEARTLAND",
-        productVersion: "1.0",
-        showBanner: unityShowBanner,
-      };
-
-      // By default Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
-
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-        container.className = "unity-mobile";
-        canvas.className = "unity-mobile";
-
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
-
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-
-      loadingBar.style.display = "block";
-
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
     </script>
-  </body>
+</body>
+
 </html>
